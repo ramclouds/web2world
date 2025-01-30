@@ -78,8 +78,8 @@ h6,
 }
 
 .logo{
-    height: 45px;
-    border-radius: 22px;
+    height: 50px;
+    border-radius: 10px;
 }
 
 /*** Button ***/
@@ -241,16 +241,16 @@ h6,
     }
 }
 
-.carousel-control-prev,
+/* .carousel-control-prev,
 .carousel-control-next {
     width: 10%;
-}
+} */
 
-.carousel-control-prev-icon,
+/* .carousel-control-prev-icon,
 .carousel-control-next-icon {
     width: 3rem;
     height: 3rem;
-}
+} */
 
 
 /*** Section Title ***/
@@ -364,13 +364,13 @@ h6,
 
 
 /*** Miscellaneous ***/
-@media (min-width: 991.98px) {
+/* @media (min-width: 991.98px) {
     .facts {
         position: relative;
         margin-top: -75px;
         z-index: 1;
     }
-}
+} */
 
 .back-to-top {
     position: fixed;
@@ -381,7 +381,7 @@ h6,
 }
 
 .bg-header {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../images/carousel-1.webp) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../images/carousel-2.webp) center center no-repeat;
     background-size: cover;
     /* height: 750px; */
 }
