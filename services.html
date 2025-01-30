@@ -48,15 +48,9 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link active">Services</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="#" class="dropdown-item">Blog Grid</a>
-                            <a href="#" class="dropdown-item">Blog Detail</a>
-                        </div>
-                    </div>
+                    <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
+                    <a href="services.html" class="nav-item nav-link active">Services</a>
+                    <a href="blog.html" class="nav-item nav-link">Blog</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
             </div>
@@ -75,148 +69,52 @@
     </div>
     <!-- Navbar End -->
 
-<!-- Service Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+<!-- Services Start -->
+<div class="container-fluid py-5">
     <div class="container py-5">
-        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-            <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
-            <h1 class="mb-0">Custom IT Solutions for Your Successful Business</h1>
-        </div>
         <div class="row g-5">
-            <!-- Web Application Development -->
-            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                    <div class="service-icon">
-                        <i class="fa fa-laptop-code text-white"></i>
+            <!-- Sidebar Start -->
+            <div class="col-lg-3">
+                <!-- Service List Start -->
+                <div class="mb-5">
+                    <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                        <h3 class="mb-0">Our Services</h3>
                     </div>
-                    <h4 class="mb-3">Web Application Development</h4>
-                    <p class="m-0">We design, develop, and deploy secure, scalable, and fully customized web applications tailored to your business needs.</p>
-                    <a class="btn btn-lg btn-primary rounded" data-bs-toggle="modal" data-bs-target="#webAppModal">
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
+                    <div class="d-flex align-items-center rounded overflow-hidden mb-3">
+                        <img src="images/icons/web-icon.png" class="me-2" width="30" height="30" alt="Web Icon">
+                        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" onclick="showService('web')"><b>Web Application Development</b></a>
+                    </div>
+                    <div class="d-flex align-items-center rounded overflow-hidden mb-3">
+                        <img src="images/icons/backend-icon.png" class="me-2" width="30" height="30" alt="Backend Icon">
+                        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" onclick="showService('backend')"><b>Back-End Development</b></a>
+                    </div>
+                    <div class="d-flex align-items-center rounded overflow-hidden mb-3">
+                        <img src="images/icons/api-icon.png" class="me-2" width="30" height="30" alt="API Icon">
+                        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" onclick="showService('api')"><b>API Development</b> </a>
+                    </div>
+                    <div class="d-flex align-items-center rounded overflow-hidden mb-3">
+                        <img src="images/icons/cyber-icon.png" class="me-2" width="30" height="30" alt="Cyber Icon">
+                        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" onclick="showService('cyber')"><b>Cybersecurity Consultancy</b></a>
+                    </div>
                 </div>
+                <!-- Service List End -->            
             </div>
-
-            <!-- Backend Development -->
-            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                    <div class="service-icon">
-                        <i class="fa fa-server text-white"></i>
+            <!-- Sidebar End -->
+            
+            <!-- Service Details Section -->
+            <div class="col-md-8">
+                <h3 class="mb-3">Service Details</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <h2 id="service-title" class="card-title text-primary">Click a service to view details</h2>
+                        <p id="service-description" class="card-text text-muted">Select a service from the list to view its details.</p>
                     </div>
-                    <h4 class="mb-3">Backend Development</h4>
-                    <p class="m-0">Build robust servers, databases, and logic to power your apps with secure, efficient, and scalable backend solutions.</p>
-                    <a class="btn btn-lg btn-primary rounded" data-bs-toggle="modal" data-bs-target="#backendModal">
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- API Development -->
-            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                    <div class="service-icon">
-                        <i class="fa fa-link text-white"></i>
-                    </div>
-                    <h4 class="mb-3">API Development</h4>
-                    <p class="m-0">We create seamless RESTful APIs to integrate your apps with external services and third-party platforms effortlessly.</p>
-                    <a class="btn btn-lg btn-primary rounded" data-bs-toggle="modal" data-bs-target="#apiModal">
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Cybersecurity Consultancy -->
-            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                    <div class="service-icon">
-                        <i class="fa fa-shield-alt text-white"></i>
-                    </div>
-                    <h4 class="mb-3">Cybersecurity Consultancy</h4>
-                    <p class="m-0">Protect your business with expert strategies, robust defenses, and ongoing support to mitigate cyber threats effectively.</p>
-                    <a class="btn btn-lg btn-primary rounded" data-bs-toggle="modal" data-bs-target="#cybersecurityModal">
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Service End -->
-
-<!-- Modals -->
-<!-- Web Application Development Modal -->
-<div class="modal fade" id="webAppModal" tabindex="-1" aria-labelledby="webAppModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="webAppModalLabel">Web Application Development</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                We build fully customized web applications tailored to your business needs. Our team works closely with
-                you to design, develop, and deploy applications that are secure, scalable, and optimized for performance.
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Backend Development Modal -->
-<div class="modal fade" id="backendModal" tabindex="-1" aria-labelledby="backendModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="backendModalLabel">Backend Development</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Backend development involves building the server, databases, and application logic that power your website or app. Your backend is responsible for handling requests from the front end, processing data, performing complex calculations, and interacting with databases. Some key components include:<br><br>
-                <strong>Server-Side Programming:</strong> Building logic and functionality to handle business requirements. <br>
-                <strong>Database Management:</strong> Storing and retrieving data efficiently and securely.<br>
-                <strong>Authentication & Authorization:</strong> Securing user data and implementing access control.<br>
-                <strong>Real-Time Data Processing:</strong> Handling asynchronous operations, messaging queues, and more.
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- API Development Modal -->
-<div class="modal fade" id="apiModal" tabindex="-1" aria-labelledby="apiModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="apiModalLabel">API Development</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Our team builds RESTful APIs that enable seamless communication between your web applications and
-                third-party tools. We ensure reliable, secure, and scalable API integrations for your business.
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Cybersecurity Consultancy Modal -->
-<div class="modal fade" id="cybersecurityModal" tabindex="-1" aria-labelledby="cybersecurityModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="cybersecurityModalLabel">Cybersecurity Consultancy</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                We provide expert cybersecurity consultancy to help businesses protect their assets, data, and
-                reputation in an increasingly complex digital landscape. With proactive strategies and robust defenses,
-                we ensure your systems remain secure.
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Include Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-
+<!-- Services End -->
 
     <!-- Vendor Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -262,17 +160,10 @@
                             <h3 class="text-light mb-0">Get In Touch</h3>
                         </div>
                         <div class="d-flex mb-2">
-                            <i class="bi bi-geo-alt text-primary me-2"></i>
-                            <p class="mb-0">123 Tech Street, Innovation City, USA</p>
-                        </div>
-                        <div class="d-flex mb-2">
                             <i class="bi bi-envelope-open text-primary me-2"></i>
-                            <p class="mb-0">contact@ramclouds.com</p>
+                            <p class="mb-0">connect.ramclouds@gmail.com</p>
                         </div>
-                        <div class="d-flex mb-2">
-                            <i class="bi bi-telephone text-primary me-2"></i>
-                            <p class="mb-0">+1 800 123 4567</p>
-                        </div>
+                       
                         <div class="d-flex mt-4">
                             <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
                             <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
@@ -299,7 +190,7 @@
                         </div>
                         <div class="link-animated d-flex flex-column justify-content-start">
                             <a class="text-light mb-2" href="./blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
-                            <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>FAQs</a>
+                            <!-- <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>FAQs</a> -->
                         </div>
                     </div>
                 </div>
@@ -337,6 +228,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/services_content.js"></script>
 </body>
 
 </html>
