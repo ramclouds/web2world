@@ -113,10 +113,10 @@
                             <input type="email" name="email" class="form-control border-0 bg-light px-4" placeholder="Company Email ID" style="height: 55px;" required>
                         </div>
                         <div class="col-12">
-                            <input type="text" name="contact_no" class="form-control border-0 bg-light px-4" placeholder="Contact Number" style="height: 55px;" required>
+                            <input type="text" id="contact" name="contact_no" class="form-control border-0 bg-light px-4" placeholder="Contact Number" style="height: 55px;" required pattern="^\d{10,15}$">
                         </div>
                         <div class="col-12">
-                            <input type="text" name="company_url" class="form-control border-0 bg-light px-4" placeholder="Company URL" style="height: 55px;">
+                            <input type="text" id="companyUrl" name="company_url" class="form-control border-0 bg-light px-4" placeholder="Company URL" style="height: 55px;" pattern="^((https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}.*)?$">
                         </div>
                         <div class="col-12">
                             <textarea name="message" class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Tell us more about your query" required></textarea>
