@@ -5,14 +5,16 @@
     <meta charset="utf-8">
     <title>Services | RamClouds</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
- 
+
     <!-- Favicon -->
     <link href="images/company_logo.jpg" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -31,7 +33,8 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner"></div>
     </div>
     <!-- Spinner End -->
@@ -69,128 +72,156 @@
     </div>
     <!-- Navbar End -->
 
-<!-- Services Start -->
-<div class="container-fluid py-5">
-    <div class="container py-5">
-        <div class="row g-5">
-            <!-- Sidebar Start -->
-            <div class="col-lg-3">
-                <!-- Service List Start -->
-                <div class="mb-5">
-                    <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                        <h3 class="mb-0">Our Services</h3>
-                    </div>
-                    <div class="d-flex align-items-center rounded overflow-hidden mb-3">
-                        <img src="images/icons/web-icon.png" class="me-2" width="30" height="30" alt="Web Icon">
-                        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" onclick="showService('web')"><b>Web Application Development</b></a>
-                    </div>
-                    <div class="d-flex align-items-center rounded overflow-hidden mb-3">
-                        <img src="images/icons/backend-icon.png" class="me-2" width="30" height="30" alt="Backend Icon">
-                        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" onclick="showService('backend')"><b>Back-End Development</b></a>
-                    </div>
-                    <div class="d-flex align-items-center rounded overflow-hidden mb-3">
-                        <img src="images/icons/api-icon.png" class="me-2" width="30" height="30" alt="API Icon">
-                        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" onclick="showService('api')"><b>API Development</b> </a>
-                    </div>
-                    <div class="d-flex align-items-center rounded overflow-hidden mb-3">
-                        <img src="images/icons/cyber-icon.png" class="me-2" width="30" height="30" alt="Cyber Icon">
-                        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" onclick="showService('cyber')"><b>Cybersecurity Consultancy</b></a>
-                    </div>
-                </div>
-                <!-- Service List End -->            
-            </div>
-            <!-- Sidebar End -->
-            
-            <!-- Service Details Section -->
-            <div class="col-md-8">
-                <h3 class="mb-3">Service Details</h3>
-                <div class="card">
-                    <div class="card-body">
-                        <h2 id="service-title" class="card-title text-primary">Click a service to view details</h2>
-                        <p id="service-description" class="card-text text-muted">Select a service from the list to view its details.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Services End -->
-    
-<!-- Footer Start -->
-<div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container">
-        <div class="row gx-5">
-            <!-- About Us Section -->
-            <div class="col-lg-4 col-md-6 footer-about">
-                <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="m-0 text-white"><img class="logo" src="./images/company_logo.jpg" alt="company_logo"> RamClouds</h1>
-                    </a>
-                    <p class="mt-3 mb-4">
-                        RamClouds is your trusted partner for innovative IT solutions. From software development to IT consulting, we empower businesses to thrive in a tech-driven world with our expertise and commitment to excellence.
-                    </p>
-                </div>
-            </div>
-            <!-- Contact Section -->
-            <div class="col-lg-8 col-md-6">
-                <div class="row gx-5">
-                    <!-- Get In Touch -->
-                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Sidebar Start -->
+                <div class="col-lg-3">
+                    <!-- Service List Start -->
+                    <div class="mb-5">
                         <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                            <h3 class="text-light mb-0">Get In Touch</h3>
+                            <h3 class="mb-0">Our Services</h3>
                         </div>
-                        <div class="d-flex mb-2">
-                            <i class="bi bi-envelope-open text-primary me-2"></i>
-                            <a href="https://mail.google.com/mail/?view=cm&to=connect.ramclouds@gmail.com" target="_blank" class="mb-0 text-decoration-none text-dark">
-                                connect.ramclouds@gmail.com</a>
-                        </div>                        
-                       
-                        <div class="d-flex mt-4">
-                            <!-- <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a> -->
-                            <!-- <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a> -->
-                            <a class="btn btn-primary btn-square me-2" href="https://www.linkedin.com/company/ramclouds/" target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            <!-- <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a> -->
+                        <div class="d-flex align-items-center rounded overflow-hidden mb-3">
+                            <img src="images/icons/web-icon.png" class="me-2" width="30" height="30" alt="Web Icon">
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2"
+                                onclick="showService('S1')"><b>Identity Strategy & Roadmap </b></a>
+                        </div>
+                        <div class="d-flex align-items-center rounded overflow-hidden mb-3">
+                            <img src="images/icons/backend-icon.png" class="me-2" width="30" height="30"
+                                alt="Backend Icon">
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2"
+                                onclick="showService('S2')"><b>Identity Governance & Administration (IGA) </b></a>
+                        </div>
+                        <div class="d-flex align-items-center rounded overflow-hidden mb-3">
+                            <img src="images/icons/api-icon.png" class="me-2" width="30" height="30" alt="API Icon">
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2"
+                                onclick="showService('S3')"><b>Access Management </b> </a>
+                        </div>
+                        <div class="d-flex align-items-center rounded overflow-hidden mb-3">
+                            <img src="images/icons/cyber-icon.png" class="me-2" width="30" height="30" alt="Cyber Icon">
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2"
+                                onclick="showService('S4')"><b>Privileged Access Management (PAM) </b></a>
+                        </div>
+                        <div class="d-flex align-items-center rounded overflow-hidden mb-3">
+                            <img src="images/icons/cyber-icon.png" class="me-2" width="30" height="30" alt="Cyber Icon">
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2"
+                                onclick="showService('S5')"><b>Cloud Identity Integration</b></a>
+                        </div>
+                        <div class="d-flex align-items-center rounded overflow-hidden mb-3">
+                            <img src="images/icons/cyber-icon.png" class="me-2" width="30" height="30" alt="Cyber Icon">
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2"
+                                onclick="showService('S6')"><b>Managed IAM Services</b></a>
                         </div>
                     </div>
-                    <!-- Quick Links -->
-                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                            <h3 class="text-light mb-0">Quick Links</h3>
-                        </div>
-                        <div class="link-animated d-flex flex-column justify-content-start">
-                            <a class="text-light mb-2" href="./index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                            <!-- <a class="text-light mb-2" href="./about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a> -->
-                            <a class="text-light mb-2" href="./services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                            <a class="text-light" href="./contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                        </div>
-                    </div>
-                    <!-- Popular Links -->
-                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                           <h3 class="text-light mb-0">Popular Links</h3>
-                        </div>
-                        <div class="link-animated d-flex flex-column justify-content-start">
-                            <a class="text-light mb-2" href="./blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
-                            <!-- <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>FAQs</a> -->
+                    <!-- Service List End -->
+                </div>
+                <!-- Sidebar End -->
+
+                <!-- Service Details Section -->
+                <div class="col-md-8">
+                    <h3 class="mb-3">Service Details</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 id="service-title" class="card-title text-primary">Click a service to view details</h2>
+                            <p id="service-description" class="card-text text-muted">Select a service from the list to
+                                view its details.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container-fluid text-white" style="background: #061429;">
-    <div class="container text-center">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-6">
-                <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                    <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">RamClouds</a>. All Rights Reserved.</p>
+    <!-- Services End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <!-- About Us Section -->
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="m-0 text-white"><img class="logo" src="./images/company_logo.jpg"
+                                    alt="company_logo"> RamClouds</h1>
+                        </a>
+                        <p class="mt-3 mb-4">
+                            RamClouds is your trusted partner for innovative IT solutions. From software development to
+                            IT consulting, we empower businesses to thrive in a tech-driven world with our expertise and
+                            commitment to excellence.
+                        </p>
+                    </div>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <!-- Get In Touch -->
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <a href="https://mail.google.com/mail/?view=cm&to=connect.ramclouds@gmail.com"
+                                    target="_blank" class="mb-0 text-decoration-none text-dark">
+                                    connect.ramclouds@gmail.com</a>
+                            </div>
+
+                            <div class="d-flex mt-4">
+                                <!-- <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a> -->
+                                <!-- <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a> -->
+                                <a class="btn btn-primary btn-square me-2"
+                                    href="https://www.linkedin.com/company/ramclouds/" target="_blank"><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                                <!-- <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a> -->
+                            </div>
+                        </div>
+                        <!-- Quick Links -->
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="./index.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <!-- <a class="text-light mb-2" href="./about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a> -->
+                                <a class="text-light mb-2" href="./services.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light" href="./contact.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <!-- Popular Links -->
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Popular Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="./blog.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
+                                <!-- <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>FAQs</a> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Footer End -->
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">RamClouds</a>. All Rights
+                            Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
 
 
     <!-- Back to Top -->
