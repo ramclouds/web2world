@@ -2,7 +2,7 @@
 const blogs = {
     1: {
         "title": "The IAM Process/Lifecycle",
-        "image": "../images/IAM core concept.png",
+        "image": "../images/The IAM Process Lifecycle.png",
         "description": `
             <br>
             <h5>Introduction</h5>
@@ -55,7 +55,7 @@ const blogs = {
     },
     2: {
         "title": "Multi-Factor Authentication (MFA)",
-        "image": "../images/IAM Multifactor Authentication.png",
+        "image": "../images/Multi-Factor Authentication (MFA).png",
         "description": `
             <br>
             <h5>Introduction</h5>
@@ -76,7 +76,7 @@ const blogs = {
     },
     3: {
         title: "Role-Based Access Control (RBAC)",
-        image: "../images/IAM Role based access.png",
+        image: "../images/Role-Based Access Control (RBAC).png",
         description: `    
             <h5>Introduction</h5>
             <p>Role-Based Access Control is an authorization method that restricts system access based on the role of a 
@@ -98,7 +98,7 @@ const blogs = {
 
     4: {
         title: "Identity Governance and Administration (IGA)",
-        image: "../images/IAM IGA.jpg",
+        image: "../images/IGA.png",
         description: `
             <h2><b>🧑‍⚖️ Identity Governance and Administration (IGA) </b></h2>
     
@@ -150,7 +150,7 @@ const blogs = {
     },
     5: {
         title: "Core IAM Architectural Components",
-        image: "../images/Core IAM Architectural Companents.jpg",
+        image: "../images/Core IAM Architectural Components.png",
         description: `          
         <h2><b>Core IAM Architectural Components </b></h2>
         <h5>1. Identity Management and Directory Services</h5>
@@ -184,7 +184,7 @@ const blogs = {
                 <li><b>Identity Governance & Administration (IGA):</b> Tools that oversee and automate policy enforcement, managing roles, and running access <b>certification campaigns</b> (periodic reviews to validate existing permissions). </li>
                 <li><b>Audit and Reporting:</b> Centralized logging of all authentication attempts, access decisions (grant/deny), and user activities for compliance and forensic analysis. </li>
                 <li><b>User Behavior Analytics (UBA):</b> Uses machine learning to detect anomalous or suspicious activity that could indicate a compromised account. </li>
-            <ul>
+            </ul>
         </p>
         <h5>🔁 How the Components Interact </h5>
         <p>The process typically follows a clear sequence: 
@@ -218,15 +218,12 @@ function loadBlogContent() {
     const blogId = urlParams.get('blogId');
 
     if (blogId && blogs[blogId]) {
-        document.getElementById("blog-title").innerHTML = blogs[blogId].title;
-        document.getElementById("blog-image").src = blogs[blogId].image;
-        document.getElementById("blog-description").innerHTML = blogs[blogId].description;
+        showBlog(blogId);
     } else {
-        document.getElementById("blog-title").innerHTML = showBlog(1).title;
-        document.getElementById("blog-image").src = showBlog(1).image;
-        document.getElementById("blog-description").innerHTML = showBlog(1).description;
+        showBlog(1);  // load default blog #1
     }
 }
+
 
 // Load blog content on page load
 window.onload = loadBlogContent;

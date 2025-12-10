@@ -229,6 +229,33 @@ h6,
     z-index: 1;
 }
 
+.carousel-caption h1 {
+    font-size: 42px !important;
+}
+
+
+/* Reduce spacing between all sections */
+.container-fluid.py-5,
+.container.py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.section-title {
+    margin-bottom: 2rem !important; /* reduce extra gap */
+}
+
+.row.g-5 {
+    --bs-gutter-y: 2rem !important; /* reduce vertical gap */
+}
+
+.get-in-touch-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
 @media (max-width: 576px) {
     .carousel-caption h5 {
         font-size: 14px;
@@ -352,6 +379,15 @@ h6,
     opacity: 1;
 }
 
+.blog-item {
+    height: 100%;
+}
+
+.blog-img img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
 
 
 .blog-item .blog-img img  {
@@ -386,6 +422,11 @@ h6,
     /* height: 750px; */
 }
 
+.blogs-header {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../images/IAM_Image.png) center center no-repeat;
+    background-size: cover;
+    /* height: 750px; */
+}
 .link-animated a {
     transition: .5s;
 }
@@ -398,4 +439,92 @@ h6,
     .footer-about {
         margin-bottom: -75px;
     }
+}
+
+.industry-card {
+    background: #ffffff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+.industry-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.timeline-step {
+    text-align: center;
+    width: 22%;
+    min-width: 200px;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    background: #0d6efd;
+    color: #fff;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    transition: 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.timeline-line {
+    flex: 1;
+    height: 3px;
+    background: #d1d1d1;
+}
+
+/* Service Card Hover Effects */
+.service-item {
+    padding: 35px 25px;
+    transition: 0.35s ease-in-out;
+    border-radius: 18px;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.service-item:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    background: #ffffff;
+}
+
+/* Icon container */
+.service-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #0d6efd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 0.35s ease;
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+/* Icon hover effect */
+.service-item:hover .service-icon {
+    transform: scale(1.12) rotate(8deg);
+    box-shadow: 0 8px 20px rgba(13,110,253,0.45);
+}
+
+/* Title hover color */
+.service-item:hover h4 {
+    color: #0d6efd !important;
 }
